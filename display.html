@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Registration Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Information</h1>
+        <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+        <p><strong>Age:</strong> <span id="displayAge"></span></p>
+        <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="displayDob"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+    </div>
+
+    <script>
+        // Retrieve data from localStorage
+        document.getElementById('displayFirstName').innerText = localStorage.getItem('firstName');
+        document.getElementById('displayLastName').innerText = localStorage.getItem('lastName');
+        document.getElementById('displayAge').innerText = localStorage.getItem('age');
+        document.getElementById('displayAddress').innerText = localStorage.getItem('address');
+        document.getElementById('displayDob').innerText = localStorage.getItem('dob');
+        document.getElementById('displayEmail').innerText = localStorage.getItem('email');
+        document.getElementById('displayGender').innerText = localStorage.getItem('gender');
+    </script>
+</body>
+</html>
